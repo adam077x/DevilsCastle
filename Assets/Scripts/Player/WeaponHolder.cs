@@ -2,23 +2,30 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Weapon : MonoBehaviour
+public class WeaponHolder : MonoBehaviour
 {
     public int damage;
+    public Weapon currentWeapon;
+    public Camera cam;
 
-    public Weapon(int damage)
+    void Start() 
     {
-        this.damage = damage;
+        currentWeapon = new Pistol(cam);
     }
 
-    public virtual void Shoot() 
+    public void Shoot(HostileEntity entity)
+    {
+        entity.health -= damage;
+    }
+
+    void Update()
     {
         if(Input.GetButtonDown("Fire1")) {
             RaycastHit hit;
             var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             if (Physics.Raycast(ray, out hit)) 
             {
-                entity.health -= damage;
+                currentWeapon.Shoot(hit.collider.GetComponent<HostileEntity>());
             }
         }
     }

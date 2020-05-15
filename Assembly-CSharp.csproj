@@ -41,9 +41,11 @@
      <Compile Include="Assets\Scripts\Entity\HostileEntity.cs" />
      <Compile Include="Assets\Scripts\Entity\TestEntity.cs" />
      <Compile Include="Assets\Scripts\Player\MouseLook.cs" />
+     <Compile Include="Assets\Scripts\Player\Pistol.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerHealth.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
      <Compile Include="Assets\Scripts\Player\Weapon.cs" />
+     <Compile Include="Assets\Scripts\Player\WeaponHolder.cs" />
      <Compile Include="Assets\Shaders\PixelatedEffect.cs" />
      <None Include="Assets\todo.txt" />
      <None Include="Assets\Shaders\PixelatedEffect.shader" />
