@@ -11,8 +11,9 @@ TODO:
 - On player damage animation
 
 WORKING:
-- Pistol fire animation 
 
 DONE:
 - Improved textures
 - New pistol texture
+- Pistol fire animation 
+- Sound Manager
