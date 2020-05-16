@@ -54,8 +54,8 @@ public class HostileEntity : Entity
 
     IEnumerator AttackCoroutine() {
         attacking = true;
+        target.GetComponent<PlayerHealth>().Hurt(damage);
         yield return new WaitForSeconds(1.0f);
-        target.GetComponent<PlayerHealth>().health -= damage;
         attacking = false;
     }
 }

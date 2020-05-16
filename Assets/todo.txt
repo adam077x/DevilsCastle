@@ -8,7 +8,7 @@ TODO:
 - Ammo counter
 - Better crosshair
 - Skeleton swing animation
-- On player damage animation
+- Improve player damage animation
 
 WORKING:
 
@@ -17,3 +17,4 @@ DONE:
 - New pistol texture
 - Pistol fire animation 
 - Sound Manager
+- On player damage animation

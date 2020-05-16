@@ -18,4 +18,10 @@ public class PlayerHealth : MonoBehaviour
     {
         healthText.text = "HP: " + health.ToString();
     }
+
+    public void Hurt(int damage) 
+    { 
+        GameObject.Find("DamageImage").GetComponent<Animator>().SetTrigger("Damaged");
+        this.health -= damage;
+    }
 }
