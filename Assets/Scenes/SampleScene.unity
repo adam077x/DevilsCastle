@@ -8243,7 +8243,7 @@ Animator:
   m_GameObject: {fileID: 2070549656}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d0e12e5547c8cc74880538e7ed474e47, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -8319,5 +8319,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4880941625296765165, guid: f4787a820614e3a4d8ed2ed00bbfaf12,
+        type: 3}
+      propertyPath: weaponAnimator
+      value: 
+      objectReference: {fileID: 2070549660}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f4787a820614e3a4d8ed2ed00bbfaf12, type: 3}

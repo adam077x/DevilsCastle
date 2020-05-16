@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Pistol : Weapon
 {
-    public Pistol() : base(1) 
+    public Pistol(Animator weaponAnimator) : base(1, weaponAnimator) 
     {
 
     }

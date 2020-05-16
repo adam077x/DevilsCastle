@@ -35,10 +35,6 @@ public class HostileEntity : Entity
     public override void Update() 
     {
         base.Update();
-        if(health <= 0) 
-        {
-            Destroy(gameObject);
-        }
 
         if(Vector3.Distance(transform.position, target.position) < sightDistance) 
         {
@@ -48,6 +44,11 @@ public class HostileEntity : Entity
         if(Vector3.Distance(transform.position, target.position) < damageDistance && !attacking) 
         {
             StartCoroutine(AttackCoroutine());
+        }
+
+        if(health <= 0) 
+        {
+            Destroy(gameObject);
         }
     }
 

@@ -4,18 +4,12 @@ using UnityEngine;
 
 public class WeaponHolder : MonoBehaviour
 {
-    public int damage;
-    public Weapon currentWeapon;
-    public Camera cam;
+    private Weapon currentWeapon;
+    public Animator weaponAnimator;
 
     void Start() 
     {
-        currentWeapon = new Pistol();
-    }
-
-    public void Shoot(HostileEntity entity)
-    {
-        entity.health -= damage;
+        currentWeapon = new Pistol(weaponAnimator);
     }
 
     void Update()
