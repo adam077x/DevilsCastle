@@ -1,0 +1,8 @@
+*.meta
+ProBuilder/
+.vscode/
+Library/
+Logs/
+obj/
+ProBuilder Data/
+Temp/

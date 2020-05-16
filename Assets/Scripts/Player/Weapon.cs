@@ -11,14 +11,14 @@ public class Weapon : MonoBehaviour
         this.damage = damage;
     }
 
-    public virtual void Shoot() 
+    public virtual void Update() 
     {
         if(Input.GetButtonDown("Fire1")) {
             RaycastHit hit;
             var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             if (Physics.Raycast(ray, out hit)) 
             {
-                entity.health -= damage;
+                hit.collider.GetComponent<HostileEntity>().health -= damage;
             }
         }
     }

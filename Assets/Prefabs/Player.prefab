@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3063241181787994452}
   - component: {fileID: 3063241181787994454}
   - component: {fileID: 3063241181787994449}
-  - component: {fileID: 3063241181787994455}
+  - component: {fileID: 4880941625296765165}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -75,7 +75,7 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &3063241181787994455
+--- !u!114 &4880941625296765165
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -84,12 +84,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 3063241181787994448}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1bb77c4be95343c4aa0c889cd1e97226, type: 3}
+  m_Script: {fileID: 11500000, guid: 44d78aa2fc1997242bb36b5d26440f8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 0
-  currentWeapon: 
-  defaultBullet: {fileID: 0}
+  currentWeapon: {fileID: 0}
   cam: {fileID: 0}
 --- !u!1 &3063241182135704604
 GameObject:

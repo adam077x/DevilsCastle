@@ -10,7 +10,7 @@ public class WeaponHolder : MonoBehaviour
 
     void Start() 
     {
-        currentWeapon = new Pistol(cam);
+        currentWeapon = new Pistol();
     }
 
     public void Shoot(HostileEntity entity)
@@ -20,13 +20,6 @@ public class WeaponHolder : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetButtonDown("Fire1")) {
-            RaycastHit hit;
-            var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            if (Physics.Raycast(ray, out hit)) 
-            {
-                currentWeapon.Shoot(hit.collider.GetComponent<HostileEntity>());
-            }
-        }
+        currentWeapon.Update();
     }
 }
