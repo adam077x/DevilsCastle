@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 3063241181787994454}
   - component: {fileID: 3063241181787994449}
   - component: {fileID: 4880941625296765165}
+  - component: {fileID: 973192617}
+  - component: {fileID: 973192620}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -52,6 +54,7 @@ MonoBehaviour:
   speed: 12
   gravity: -9.81
   jumpHeight: 3
+  multiplier: 1
   groundCheck: {fileID: 3063241182135704605}
   groundDistance: 0.4
   groundMask:
@@ -87,9 +90,43 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44d78aa2fc1997242bb36b5d26440f8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 0
-  currentWeapon: {fileID: 0}
-  cam: {fileID: 0}
+  weaponAnimator: {fileID: 0}
+--- !u!95 &973192617
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3063241181787994448}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1244d1235373f16499cd53aaae5dacc5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &973192620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3063241181787994448}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdc09ada74b51814e940a04742203fe2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 0
+  animator: {fileID: 0}
+  playerAnimator: {fileID: 973192617}
+  resetText: {fileID: 0}
+  healthText: {fileID: 0}
 --- !u!1 &3063241182135704604
 GameObject:
   m_ObjectHideFlags: 0

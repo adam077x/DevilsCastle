@@ -9,9 +9,9 @@ TODO:
 - Improve player damage animation
 
 WORKING:
-- Player death animation
 
 DONE:
+- Player death animation
 - Fix movement speed bug
 - Improved textures
 - New pistol texture
