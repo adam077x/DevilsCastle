@@ -1,18 +1,18 @@
 TODO:
 - Multiple guns
 - Improve skeleton art
-- Player death animation
 - Enemy death animation
 - More and improved grass textures
-- Fix movement speed bug
 - Ammo counter
 - Better crosshair
 - Skeleton swing animation
 - Improve player damage animation
 
 WORKING:
+- Player death animation
 
 DONE:
+- Fix movement speed bug
 - Improved textures
 - New pistol texture
 - Pistol fire animation 

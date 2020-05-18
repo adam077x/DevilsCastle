@@ -36,6 +36,8 @@ public class HostileEntity : Entity
     {
         base.Update();
 
+        if(PlayerHealth.dead) return;
+
         if(Vector3.Distance(transform.position, target.position) < sightDistance) 
         {
             navMeshAgent.SetDestination(target.position);

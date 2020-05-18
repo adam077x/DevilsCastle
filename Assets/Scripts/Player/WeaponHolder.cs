@@ -14,6 +14,7 @@ public class WeaponHolder : MonoBehaviour
 
     void Update()
     {
+        if(PlayerHealth.dead) return;
         currentWeapon.Update();
     }
 }
