@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class WeaponHolder : MonoBehaviour
 {
@@ -16,5 +17,13 @@ public class WeaponHolder : MonoBehaviour
     {
         if(PlayerHealth.dead) return;
         currentWeapon.Update();
+        if(currentWeapon.ammo == -1) 
+        {
+            UIManager.instance.GetText("Ammo").ChangeText("AMMO: ∞");
+        }
+        else 
+        {
+            UIManager.instance.GetText("Ammo").ChangeText("AMMO: " + currentWeapon.ammo.ToString());
+        }
     }
 }

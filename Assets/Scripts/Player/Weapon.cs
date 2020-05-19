@@ -6,20 +6,31 @@ public class Weapon : MonoBehaviour
 {
     public int damage;
     private Animator animator;
+    public int ammo;
 
     public Weapon(int damage, Animator weaponAnimator)
     {
         this.animator = weaponAnimator;
         this.damage = damage;
+        ammo = 10;
     }
 
     void FixedUpdate()
     {
+        
     }
 
     public virtual void Update() 
     {
         if(Input.GetButtonDown("Fire1")) {
+            if(ammo == 0)
+            {
+                return;
+            }
+            else if(ammo != -1) 
+            {
+                ammo -= 1;
+            }
             RaycastHit hit;
             var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             animator.SetBool("Shoot", true);

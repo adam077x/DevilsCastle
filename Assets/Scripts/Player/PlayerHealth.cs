@@ -10,9 +10,6 @@ public class PlayerHealth : MonoBehaviour
     public Animator animator;
     public Animator playerAnimator;
     public static bool dead;
-    public Text resetText;
-
-    [SerializeField] private Text healthText;
 
     void Start()
     {
@@ -37,13 +34,16 @@ public class PlayerHealth : MonoBehaviour
             }
         }
 
-        resetText.gameObject.SetActive(dead);
+        if(dead) 
+        {
+            UIManager.instance.GetText("Restart").Show();
+        }
 
         animator.SetBool("Dead", dead);
 
         playerAnimator.SetBool("Dead", dead);    
 
-        healthText.text = "HP: " + health.ToString();
+        UIManager.instance.GetText("Health").ChangeText("HP: " + health.ToString());
     }
 
     public void Hurt(int damage) 
