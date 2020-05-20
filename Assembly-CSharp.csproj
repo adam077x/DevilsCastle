@@ -620,6 +620,9 @@
     <Reference Include="UnityEditor.UI">
         <HintPath>C:/Users/Adam/Documents/Unity Projects/DevilsCastle/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.2D.Sprite.Editor">
+        <HintPath>C:/Users/Adam/Documents/Unity Projects/DevilsCastle/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
   </ItemGroup>

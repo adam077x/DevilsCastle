@@ -2,19 +2,19 @@ TODO:
 - Multiple guns
 - More and improved grass textures
 - Better crosshair
-- Skeleton swing animation
 - Improve player damage animation
 - Bullet particles
 - Health pickups
 - Ammo pickups
 - Infinity Image for ammo counter
+- On enemy hit effect
 
 WORKING:
-- On enemy hit effect
-- Improve skeleton art
-- Enemy death animation
 
 DONE:
+- Skeleton dead sprite
+- Skeleton swing animation
+- Improve skeleton art
 - Ammo counter
 - Player death animation
 - Fix movement speed bug
