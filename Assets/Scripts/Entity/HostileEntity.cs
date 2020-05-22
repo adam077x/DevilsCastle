@@ -35,21 +35,15 @@ public class HostileEntity : Entity
         animator = GetComponent<Animator>();
     }
 
-    bool onground = false;
-
     public override void Update() 
     {
         base.Update();
 
-        if(onground) 
-        {
-        }
-
         if(health <= 0) 
         {
             animator.SetTrigger("Die");
-            onground = true;
-            navMeshAgent.Stop();
+            this.GetComponent<BoxCollider>().enabled = false;
+            this.GetComponent<NavMeshAgent>().enabled = false;
             return;
         }
 
@@ -71,10 +65,12 @@ public class HostileEntity : Entity
         }
     }
 
-    IEnumerator AttackCoroutine() {
+    IEnumerator AttackCoroutine() 
+    {
         attacking = true;
-        target.GetComponent<PlayerHealth>().Hurt(damage);
         animator.SetTrigger("Swing");
+        target.GetComponent<PlayerHealth>().Hurt(damage);
+
         yield return new WaitForSeconds(1.0f);
         attacking = false;
     }

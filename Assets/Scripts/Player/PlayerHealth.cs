@@ -7,7 +7,6 @@ using UnityEngine.SceneManagement;
 public class PlayerHealth : MonoBehaviour
 {
     public int health;
-    public Animator animator;
     public Animator playerAnimator;
     public static bool dead;
 
@@ -15,7 +14,6 @@ public class PlayerHealth : MonoBehaviour
     {
         health = 100;
         dead = false;
-        playerAnimator = GetComponent<Animator>();
     }
 
     void Update()
@@ -39,9 +37,8 @@ public class PlayerHealth : MonoBehaviour
             UIManager.instance.GetText("Restart").Show();
         }
 
-        animator.SetBool("Dead", dead);
-
         playerAnimator.SetBool("Dead", dead);    
+        UIManager.instance.GetImage("Damage").GetAnimator().SetBool("Dead", dead);
 
         UIManager.instance.GetText("Health").ChangeText("HP: " + health.ToString());
     }

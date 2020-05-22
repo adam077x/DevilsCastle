@@ -7,6 +7,7 @@ public class UIManager : MonoBehaviour
     public static UIManager instance;
 
     public GameText[] textList;
+    public GameImage[] imageList;
 
     void Awake()
     {
@@ -16,5 +17,10 @@ public class UIManager : MonoBehaviour
     public GameText GetText(string name)
     {
         return Array.Find(textList, text => text.name == name);
+    }
+
+    public GameImage GetImage(string name)
+    {
+        return Array.Find(imageList, image => image.name == name);
     }
 }
