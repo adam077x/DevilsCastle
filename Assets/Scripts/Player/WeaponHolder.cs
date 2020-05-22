@@ -19,11 +19,13 @@ public class WeaponHolder : MonoBehaviour
         currentWeapon.Update();
         if(currentWeapon.ammo == -1) 
         {
-            UIManager.instance.GetText("Ammo").ChangeText("AMMO: ∞");
+            UIManager.instance.GetText("Ammo").ChangeText("AMMO:");
+            UIManager.instance.GetImage("Infinity").Show();
         }
         else 
         {
             UIManager.instance.GetText("Ammo").ChangeText("AMMO: " + currentWeapon.ammo.ToString());
+            UIManager.instance.GetImage("Infinity").Show();
         }
     }
 }

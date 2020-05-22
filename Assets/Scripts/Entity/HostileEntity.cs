@@ -63,12 +63,13 @@ public class HostileEntity : Entity
         {
             StartCoroutine(AttackCoroutine());
         }
+
+        animator.SetBool("Swing", attacking);
     }
 
     IEnumerator AttackCoroutine() 
     {
         attacking = true;
-        animator.SetTrigger("Swing");
         target.GetComponent<PlayerHealth>().Hurt(damage);
 
         yield return new WaitForSeconds(1.0f);
