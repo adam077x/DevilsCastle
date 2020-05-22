@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Entity : MonoBehaviour
 {
+    [System.NonSerialized]
     public Transform target;
 
     public void LookTowards() {
@@ -14,7 +15,7 @@ public class Entity : MonoBehaviour
 
     public virtual void Start()
     {
-        
+        target = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
     public virtual void Update()

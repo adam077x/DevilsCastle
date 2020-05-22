@@ -11,7 +11,7 @@ public class Pickable : Entity
 
     public virtual void OnPickup() 
     {
-
+        Destroy(gameObject);
     }
 
     void OnTriggerEnter(Collider other)

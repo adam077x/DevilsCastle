@@ -30,6 +30,8 @@ public class HostileEntity : Entity
 
     public override void Start() 
     {
+        base.Start();
+
         rb = GetComponent<Rigidbody>();
         navMeshAgent = GetComponent<NavMeshAgent>();
         animator = GetComponent<Animator>();
