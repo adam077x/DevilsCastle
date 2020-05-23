@@ -8,6 +8,7 @@ public class UIManager : MonoBehaviour
 
     public GameText[] textList;
     public GameImage[] imageList;
+    public GameSprite[] spriteList;
 
     void Awake()
     {
@@ -22,5 +23,10 @@ public class UIManager : MonoBehaviour
     public GameImage GetImage(string name)
     {
         return Array.Find(imageList, image => image.name == name);
+    }
+
+    public GameSprite GetSprite(string name) 
+    {
+        return Array.Find(spriteList, sprite => sprite.name == name);
     }
 }

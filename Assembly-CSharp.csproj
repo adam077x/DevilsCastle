@@ -36,12 +36,15 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\Entity\Bullet.cs" />
      <Compile Include="Assets\Scripts\Entity\Entity.cs" />
-     <Compile Include="Assets\Scripts\Entity\HostileEntity.cs" />
-     <Compile Include="Assets\Scripts\Entity\Pickable.cs" />
-     <Compile Include="Assets\Scripts\Entity\TestEntity.cs" />
+     <Compile Include="Assets\Scripts\Entity\HostileEntities\HostileEntity.cs" />
+     <Compile Include="Assets\Scripts\Entity\HostileEntities\TestEntity.cs" />
+     <Compile Include="Assets\Scripts\Entity\Pickups\Ammopack.cs" />
+     <Compile Include="Assets\Scripts\Entity\Pickups\Medkit.cs" />
+     <Compile Include="Assets\Scripts\Entity\Pickups\Pickable.cs" />
+     <Compile Include="Assets\Scripts\Entity\Pickups\SmallMedkit.cs" />
      <Compile Include="Assets\Scripts\Managers\GameImage.cs" />
+     <Compile Include="Assets\Scripts\Managers\GameSprite.cs" />
      <Compile Include="Assets\Scripts\Managers\GameText.cs" />
      <Compile Include="Assets\Scripts\Managers\Sound.cs" />
      <Compile Include="Assets\Scripts\Managers\SoundManager.cs" />
@@ -50,6 +53,7 @@
      <Compile Include="Assets\Scripts\Player\Pistol.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerHealth.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
+     <Compile Include="Assets\Scripts\Player\Rifle.cs" />
      <Compile Include="Assets\Scripts\Player\Weapon.cs" />
      <Compile Include="Assets\Scripts\Player\WeaponHolder.cs" />
      <Compile Include="Assets\Shaders\PixelatedEffect.cs" />

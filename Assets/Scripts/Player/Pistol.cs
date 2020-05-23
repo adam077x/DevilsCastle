@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Pistol : Weapon
 {
-    public Pistol(Animator weaponAnimator) : base(1, weaponAnimator) 
+    public Pistol() : base(1, "Pistol_Fire", UIManager.instance.GetSprite("Pistol").sprite) 
     {
         ammo = -1;
     }

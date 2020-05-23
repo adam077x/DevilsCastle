@@ -5,27 +5,41 @@ using UnityEngine.UI;
 
 public class WeaponHolder : MonoBehaviour
 {
-    private Weapon currentWeapon;
-    public Animator weaponAnimator;
+    [System.NonSerialized]
+    public Weapon[] weapons = new Weapon[2];
+    public static int currentWeapon;
 
     void Start() 
     {
-        currentWeapon = new Pistol(weaponAnimator);
+        currentWeapon = 0;
+        weapons[0] = new Pistol();
+        weapons[1] = new Rifle();
     }
 
     void Update()
     {
         if(PlayerHealth.dead) return;
-        currentWeapon.Update();
-        if(currentWeapon.ammo == -1) 
+
+        if(Input.GetKeyDown(KeyCode.Alpha1)) 
+        {
+            currentWeapon = 0;
+        }
+        else if(Input.GetKeyDown(KeyCode.Alpha2)) 
+        {
+            currentWeapon = 1;
+        }
+        Debug.Log(currentWeapon);
+
+        weapons[currentWeapon].Update();
+        if(weapons[currentWeapon].ammo == -1) 
         {
             UIManager.instance.GetText("Ammo").ChangeText("AMMO:");
             UIManager.instance.GetImage("Infinity").Show();
         }
         else 
         {
-            UIManager.instance.GetText("Ammo").ChangeText("AMMO: " + currentWeapon.ammo.ToString());
-            UIManager.instance.GetImage("Infinity").Show();
+            UIManager.instance.GetText("Ammo").ChangeText("AMMO: " + weapons[currentWeapon].ammo.ToString());
+            UIManager.instance.GetImage("Infinity").Hide();
         }
     }
 }

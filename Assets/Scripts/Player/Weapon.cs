@@ -1,18 +1,25 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class Weapon : MonoBehaviour
+public class Weapon
 {
     public int damage;
-    private Animator animator;
     public int ammo;
+    [System.NonSerialized]
+    public string fireAnimationName;
+    [System.NonSerialized]
+    public Image weaponImage;
+    public Sprite weaponSprite;
 
-    public Weapon(int damage, Animator weaponAnimator)
+    public Weapon(int damage, string fireAnimationName, Sprite weaponSprite)
     {
-        this.animator = weaponAnimator;
+        this.fireAnimationName = fireAnimationName;
         this.damage = damage;
+        this.weaponSprite = weaponSprite;
         ammo = 10;
+        weaponImage = GameObject.Find("Weapon").GetComponent<Image>();
     }
 
     void FixedUpdate()
@@ -22,6 +29,8 @@ public class Weapon : MonoBehaviour
 
     public virtual void Update() 
     {
+        weaponImage.sprite = weaponSprite;
+
         if(Input.GetButtonDown("Fire1")) {
             if(ammo == 0)
             {
@@ -33,7 +42,7 @@ public class Weapon : MonoBehaviour
             }
             RaycastHit hit;
             var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            animator.SetBool("Shoot", true);
+            UIManager.instance.GetImage("Weapon").GetAnimator().SetBool("Shoot", true);
             SoundManager.instance.Play("Pistol_Fire");
             if (Physics.Raycast(ray, out hit)) 
             {
