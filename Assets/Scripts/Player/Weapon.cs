@@ -29,7 +29,7 @@ public class Weapon
 
     public virtual void Update() 
     {
-        weaponImage.sprite = weaponSprite;
+        weaponImage.overrideSprite = weaponSprite;
 
         if(Input.GetButtonDown("Fire1")) {
             if(ammo == 0)
