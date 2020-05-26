@@ -19,7 +19,7 @@ public class Weapon
         this.damage = damage;
         this.weaponSprite = weaponSprite;
         ammo = 10;
-        weaponImage = GameObject.Find("Weapon").GetComponent<Image>();
+        //weaponImage = GameObject.Find("Weapon").GetComponent<Image>();
     }
 
     void FixedUpdate()
@@ -29,28 +29,32 @@ public class Weapon
 
     public virtual void Update() 
     {
-        weaponImage.overrideSprite = weaponSprite;
+        if(Input.GetButtonDown("Fire1")) 
+        {
+            Shoot();
+        }
+    }
 
-        if(Input.GetButtonDown("Fire1")) {
-            if(ammo == 0)
+    public void Shoot() 
+    {
+        if(ammo == 0)
+        {
+            return;
+        }
+        else if(ammo != -1) 
+        {
+            ammo -= 1;
+        }
+        RaycastHit hit;
+        var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        UIManager.instance.GetImage("Weapon").GetAnimator().SetTrigger("Shoot");
+        SoundManager.instance.Play("Pistol_Fire");
+        if (Physics.Raycast(ray, out hit)) 
+        {
+            HostileEntity entity = hit.collider.GetComponent<HostileEntity>();
+            if(entity != null)
             {
-                return;
-            }
-            else if(ammo != -1) 
-            {
-                ammo -= 1;
-            }
-            RaycastHit hit;
-            var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            UIManager.instance.GetImage("Weapon").GetAnimator().SetBool("Shoot", true);
-            SoundManager.instance.Play("Pistol_Fire");
-            if (Physics.Raycast(ray, out hit)) 
-            {
-                HostileEntity entity = hit.collider.GetComponent<HostileEntity>();
-                if(entity != null)
-                {
-                    entity.health -= damage;
-                }
+                entity.health -= damage;
             }
         }
     }

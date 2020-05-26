@@ -20,6 +20,8 @@ public class WeaponHolder : MonoBehaviour
     {
         if(PlayerHealth.dead) return;
 
+        UIManager.instance.GetImage("Weapon").GetAnimator().SetInteger("CurrentWeapon", currentWeapon);
+
         if(Input.GetKeyDown(KeyCode.Alpha1)) 
         {
             currentWeapon = 0;
@@ -28,7 +30,6 @@ public class WeaponHolder : MonoBehaviour
         {
             currentWeapon = 1;
         }
-        Debug.Log(currentWeapon);
 
         weapons[currentWeapon].Update();
         if(weapons[currentWeapon].ammo == -1) 

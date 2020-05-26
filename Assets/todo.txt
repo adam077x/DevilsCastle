@@ -2,14 +2,14 @@ TODO:
 - More and improved grass textures
 - Better crosshair
 - Bullet particles
-- Ammo pickups
 - On enemy hit effect
 
 WORKING:
-- Health pickups
-- Multiple guns
 
 DONE:
+- Ammo pickups
+- Rifle gun
+- Health pickups
 - Improve player damage animation
 - Infinity Image for ammo counter
 - Skeleton dead sprite

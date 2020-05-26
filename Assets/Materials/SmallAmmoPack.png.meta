@@ -1,19 +1,7 @@
 fileFormatVersion: 2
-guid: e242f74fc389b01499834e75ce70e8d6
+guid: 88baaf2f28acc8f458f5953da7b33a79
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: -5041100216487682963
-    second: RiflePrototype_0
-  - first:
-      213: -8206638756968587081
-    second: RiflePrototype_1
-  - first:
-      213: -8985669181752042288
-    second: RiflePrototype_2
-  - first:
-      213: -4944677296107229823
-    second: RiflePrototype_3
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -52,7 +40,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -109,49 +97,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: RiflePrototype_1
-      rect:
-        serializedVersion: 2
-        x: 26
-        y: 0
-        width: 24
-        height: 23
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7b02feaf7892c1e80800000000000000
-      internalID: -8206638756968587081
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: RiflePrototype_2
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 24
-        height: 23
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0dc9e70cc7d7c4380800000000000000
-      internalID: -8985669181752042288
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []

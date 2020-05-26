@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 5968561681467277387}
   - component: {fileID: 5968561681467277386}
   - component: {fileID: 5968561681467277384}
-  - component: {fileID: 4190760820873266777}
+  - component: {fileID: 4137052280150621859}
   m_Layer: 0
-  m_Name: Medkit
+  m_Name: SmallAmmopack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -72,7 +72,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 050399dfd1fc34f4bad053a40b1743c9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 88baaf2f28acc8f458f5953da7b33a79, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -94,9 +94,9 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.5, y: 0.2246816, z: 1}
-  m_Center: {x: 0, y: 0.027209772, z: 0}
---- !u!114 &4190760820873266777
+  m_Size: {x: 0.25546417, y: 0.2246816, z: 1}
+  m_Center: {x: -0.0035035552, y: 0.027209772, z: 0}
+--- !u!114 &4137052280150621859
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -105,6 +105,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 5968561681467277388}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7be0916152567744abeb4dd9ce4acc3c, type: 3}
+  m_Script: {fileID: 11500000, guid: fe7e50a1442a59d40bb096cb8fcdce80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

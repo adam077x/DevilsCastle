@@ -42,6 +42,7 @@
      <Compile Include="Assets\Scripts\Entity\Pickups\Ammopack.cs" />
      <Compile Include="Assets\Scripts\Entity\Pickups\Medkit.cs" />
      <Compile Include="Assets\Scripts\Entity\Pickups\Pickable.cs" />
+     <Compile Include="Assets\Scripts\Entity\Pickups\SmallAmmopack.cs" />
      <Compile Include="Assets\Scripts\Entity\Pickups\SmallMedkit.cs" />
      <Compile Include="Assets\Scripts\Managers\GameImage.cs" />
      <Compile Include="Assets\Scripts\Managers\GameSprite.cs" />
