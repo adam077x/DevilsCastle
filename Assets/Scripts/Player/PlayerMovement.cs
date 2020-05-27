@@ -31,7 +31,7 @@ public class PlayerMovement : MonoBehaviour
 
         Vector3 move = Vector3.ClampMagnitude(transform.right * x + transform.forward * z, 1.0f);
 
-        if (Input.GetButtonDown("Jump") && isGrounded) 
+        if (Input.GetButtonDown("Jump") && isGrounded && !PlayerHealth.dead) 
         {
             velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
         }

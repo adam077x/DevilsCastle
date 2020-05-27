@@ -7757,7 +7757,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh14012
+  m_Name: pb_Mesh14018
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -8151,11 +8151,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Skeleton (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 1274181937756689543, guid: 70b704d868dbe244387d165f13df0516,
-        type: 3}
-      propertyPath: target
-      value: 
-      objectReference: {fileID: 484398510}
     - target: {fileID: 1274181937756689593, guid: 70b704d868dbe244387d165f13df0516,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8614,7 +8609,7 @@ RectTransform:
   - {fileID: 1121924618}
   - {fileID: 992328195}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}

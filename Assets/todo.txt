@@ -1,10 +1,12 @@
 TODO:
 - More and improved grass textures
 - Better crosshair
-- Bullet particles
-- On enemy hit effect
+- Zombie enemy
+- Guard enemy
 
 WORKING:
+- On enemy hit effect
+- Bullet particles
 
 DONE:
 - Ammo pickups

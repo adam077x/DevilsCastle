@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TestEntity : HostileEntity
 {
-    public TestEntity() : base(3, 20, 15, 1) {
+    public TestEntity() : base(5, 20, 20, 2) {
         
     }
 }
