@@ -13,7 +13,7 @@ public class WeaponHolder : MonoBehaviour
     {
         currentWeapon = 0;
         weapons[0] = new Pistol();
-        weapons[1] = new Rifle();
+        weapons[1] = null;
     }
 
     void Update()
@@ -28,7 +28,10 @@ public class WeaponHolder : MonoBehaviour
         }
         else if(Input.GetKeyDown(KeyCode.Alpha2)) 
         {
-            currentWeapon = 1;
+            if (weapons[1] != null)
+            {
+                currentWeapon = 1;
+            }
         }
 
         weapons[currentWeapon].Update();

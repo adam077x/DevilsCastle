@@ -4,9 +4,9 @@ TODO:
 
 WORKING:
 - Guard enemy
-- Weapon pickups
 
 DONE:
+- Rifle pickup
 - Better crosshair
 - More and improved grass textures
 - Zombie enemy
