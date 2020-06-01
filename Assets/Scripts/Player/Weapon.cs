@@ -62,7 +62,7 @@ public class Weapon
         SoundManager.instance.Play("Pistol_Fire");
         if (Physics.Raycast(ray, out hit)) 
         {
-            GameObject.Instantiate(dustParticle, hit.point, Quaternion.identity);
+            //GameObject.Instantiate(dustParticle, hit.point, Quaternion.identity);
             HostileEntity entity = hit.collider.GetComponent<HostileEntity>();
             if(entity != null)
             {

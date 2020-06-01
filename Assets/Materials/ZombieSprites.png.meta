@@ -1,22 +1,22 @@
 fileFormatVersion: 2
-guid: bf2b6a885d1ebca4e89f68b32aaeeea0
+guid: e88e1137e2156ba4ead560e084d6eb27
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5296201707715055314
-    second: GrassEntityTexture_0
+      213: -4908622462142723782
+    second: ZombieSprites_0
   - first:
-      213: -8030031507144603536
-    second: GrassEntityTexture_1
+      213: 8532163678651997989
+    second: ZombieSprites_1
   - first:
-      213: 2433530086319597713
-    second: GrassEntityTexture_2
+      213: -1974332436550679201
+    second: ZombieSprites_2
   - first:
-      213: -887681694901712180
-    second: GrassEntityTexture_3
+      213: 2398711483081841102
+    second: ZombieSprites_3
   - first:
-      213: 1218350998449921229
-    second: GrassEntityTexture_4
+      213: 7814347237658875833
+    second: ZombieSprites_4
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -102,85 +102,106 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: GrassEntityTexture_0
+      name: ZombieSprites_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 16
-        height: 16
+        width: 14
+        height: 24
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e21b3d87b9c1086b0800000000000000
-      internalID: -5296201707715055314
+      spriteID: a39ca7fa0e111ebb0800000000000000
+      internalID: -4908622462142723782
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GrassEntityTexture_1
+      name: ZombieSprites_1
       rect:
         serializedVersion: 2
         x: 16
         y: 0
-        width: 16
-        height: 16
+        width: 14
+        height: 24
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0788371a3e89f8090800000000000000
-      internalID: -8030031507144603536
+      spriteID: 52fda8f09a5586670800000000000000
+      internalID: 8532163678651997989
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GrassEntityTexture_3
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cca44cd93325ea3f0800000000000000
-      internalID: -887681694901712180
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GrassEntityTexture_4
+      name: ZombieSprites_2
       rect:
         serializedVersion: 2
         x: 32
         y: 0
-        width: 16
-        height: 16
+        width: 14
+        height: 24
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dcc995a27c378e010800000000000000
-      internalID: 1218350998449921229
+      spriteID: f558dd20c13c994e0800000000000000
+      internalID: -1974332436550679201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieSprites_3
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 0
+        width: 13
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec95ebb826fe94120800000000000000
+      internalID: 2398711483081841102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieSprites_4
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 12
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b756341963227c60800000000000000
+      internalID: 7814347237658875833
       vertices: []
       indices: 
       edges: []
@@ -188,7 +209,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 9d1b5fa72ec37114da7a85187b76bb75
     internalID: 0
     vertices: []
     indices: 

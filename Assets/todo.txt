@@ -1,14 +1,15 @@
 TODO:
-- More and improved grass textures
-- Better crosshair
-- Zombie enemy
-- Guard enemy
-
-WORKING:
 - On enemy hit effect
 - Bullet particles
 
+WORKING:
+- Guard enemy
+- Weapon pickups
+
 DONE:
+- Better crosshair
+- More and improved grass textures
+- Zombie enemy
 - Ammo pickups
 - Rifle gun
 - Health pickups
